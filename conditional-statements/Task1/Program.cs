@@ -22,19 +22,35 @@ namespace Task1
             Console.WriteLine("User input was: {0} : integer: {1}", userInput, evaluatedNumber);
             // Console.WriteLine("user input was: " + userInput);
             
-            if (evaluatedNumber > 0)
+            if (evaluatedNumber == 0)
             {
-                Console.WriteLine("Number {0} is positive", evaluatedNumber);
+                Console.WriteLine("Number {0} equals 0 and is even", evaluatedNumber);
             }
                              
-            else if (evaluatedNumber < 0)
+            else if (evaluatedNumber > 0)
             {
-                Console.WriteLine("Number {0} is negative", evaluatedNumber);
+                if (evaluatedNumber % 2 == 0)
+                {
+
+                    Console.WriteLine("Number {0} is positive and even", evaluatedNumber);
+                }
+                else
+                {
+                    Console.WriteLine("Number {0} is positive and odd", evaluatedNumber);
+                }
             }
             
             else
             {
-                Console.WriteLine("Number {0} equals 0", evaluatedNumber);
+                if (evaluatedNumber % 2 == 0)
+                {
+                    Console.WriteLine("Number {0} is negative and even", evaluatedNumber);
+                }
+                else
+                {
+                    Console.WriteLine("Number {0} is negative and odd", evaluatedNumber);
+                }
+                
             }
 
             // Wait for user input
