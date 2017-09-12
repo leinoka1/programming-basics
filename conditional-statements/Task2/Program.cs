@@ -24,6 +24,7 @@ namespace Task2
 
 
             if (evaluatedNumber % 2 == 0)
+            // Number 0 is considered to be even
             {
                 Console.WriteLine("Number {0} is even", evaluatedNumber);
             }
