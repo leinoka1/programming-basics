@@ -30,23 +30,45 @@ namespace Task4
             userInputThird = Console.ReadLine();
             int.TryParse(userInputThird, out evaluatedNumberThird);
             
-            // Evaluate user input   
+            // Evaluate user input number order  
             
             if (evaluatedNumberFirst < evaluatedNumberSecond)
 
             {
                 if (evaluatedNumberSecond < evaluatedNumberThird)
-                Console.WriteLine("{0},{1},{2}", evaluatedNumberFirst,evaluatedNumberSecond,evaluatedNumberThird);
+                {
+                    Console.WriteLine("{0},{1},{2}", evaluatedNumberFirst, evaluatedNumberSecond, evaluatedNumberThird);
+                }
+                    
                 else if (evaluatedNumberFirst < evaluatedNumberThird)
-                Console.WriteLine("{0},{1},{2}", evaluatedNumberFirst, evaluatedNumberThird, evaluatedNumberSecond);
+                {
+                    Console.WriteLine("{0},{1},{2}", evaluatedNumberFirst, evaluatedNumberThird, evaluatedNumberSecond);
+                }
+                    
+                else
+                {
+                    Console.WriteLine("{0},{1},{2}", evaluatedNumberThird, evaluatedNumberFirst, evaluatedNumberSecond);
+                }
+                    
             }
-
+            
             else
             {
-                if (evaluatedNumberSecond < evaluatedNumberThird)
+                if (evaluatedNumberFirst < evaluatedNumberThird)
+                {
                     Console.WriteLine("{0},{1},{2}", evaluatedNumberSecond, evaluatedNumberFirst, evaluatedNumberThird);
-                else if (evaluatedNumberFirst < evaluatedNumberThird)
+                }
+
+                else if (evaluatedNumberSecond < evaluatedNumberThird)
+                {
+                              
                     Console.WriteLine("{0},{1},{2}", evaluatedNumberSecond, evaluatedNumberThird, evaluatedNumberFirst);
+                }
+                
+                else
+                {
+                    Console.WriteLine("{0},{1},{2}", evaluatedNumberThird, evaluatedNumberSecond, evaluatedNumberFirst);
+                }
                 
             }
 
