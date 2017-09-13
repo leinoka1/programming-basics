@@ -53,52 +53,91 @@ namespace Task5
             // Varusmies: 50 % alennus
             // Opiskelija: 45 % alennus
 
-            // First Membership
+            // First military handling
+            
             if (userInputMilitary == "Y")
             {
-                Console.WriteLine("Ticket price is 8 e");
-            }
+                if (evaluatedNumberAge < 7)
 
-            else if (userInputStudent == "Y")
-
-            {
-                Console.WriteLine("Ticket price is 8,80 e");
-            }
-
-            else if (userInputMembership == "Y")
-
-            {
-                Console.WriteLine("Ticket price is 13,60 e");
-            }
-            else
-            {
-                Console.WriteLine("Ticket price is 16 e");
-            }
-
-
-            // Age discounts
-            if (evaluatedNumberAge < 7)
-            {
-                Console.WriteLine("Free of charge");
-            }
-
-            else if (65 < evaluatedNumberAge)
-            {
-                Console.WriteLine("Free of charge");
-                
-            }
-            else if (7 < evaluatedNumberAge)
-                if (15 > evaluatedNumberAge)
-                    Console.WriteLine("Ticket price is 8 e");
-                else 
-                        Console.WriteLine("Ticket price is 16 e");
-            else
                 {
-            }
+                    Console.WriteLine("Free of charge");
+                }
                 
+                else
+
+                {
+                    Console.WriteLine("Ticket price is 8,00 e");
+                }
+            }
+
+            // Student handling
+
+            if (userInputStudent == "Y")
+            {
+                if (evaluatedNumberAge < 7)
+
+                {
+                    Console.WriteLine("Free of charge");
+                }
+
+                else if (userInputMembership == "Y")
+
+                {
+                    Console.WriteLine("Ticket price is 7,48 e");
+                }
+
+                else
+
+                {
+                    Console.WriteLine("Ticket price is 8,00 e");
+                }
+            }
+
+            // Membership handling
+
+            if (userInputMembership == "Y")
+            {
+                if (evaluatedNumberAge < 7)
+
+                {
+                    Console.WriteLine("Free of charge");
+                }
+
+                else if (userInputStudent == "Y")
+
+                {
+                    Console.WriteLine("Ticket price is 7,48 e");
+                }
+
+                else
+
+                {
+                    Console.WriteLine("Ticket price is 13,60 e");
+                }
+            }
 
 
+            else
+            {
 
+                if (evaluatedNumberAge < 7)
+
+                {
+                    Console.WriteLine("Free of charge");
+                }
+
+                else if (65 < evaluatedNumberAge)
+                {
+                    Console.WriteLine("Free of charge");
+
+                }
+                if (evaluatedNumberAge < 15)
+                {
+
+                }
+            }
+            // Age discounts
+            
 
                     // Wait for user input
                     Console.ReadKey();
