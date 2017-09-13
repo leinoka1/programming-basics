@@ -11,7 +11,7 @@ namespace Task1
                 // Prompt user
                 // Read user first input
                 
-                Console.Write("Enter Number");
+                Console.Write("Input:");
 
                 string userInputN;
                 int evaluatedNumberN;
@@ -20,19 +20,28 @@ namespace Task1
 
                 // Confirm N
                 Console.WriteLine("You entered {0}", evaluatedNumberN);
-                int loopCount = 0;
-                long multiplationOutput = 1;
-                while (loopCount < evaluatedNumberN)        
+                if (evaluatedNumberN > 1)
                 {
-                    loopCount++;
-                    multiplationOutput = loopCount*multiplationOutput;
+                    int loopCount = 0;
+                    long multiplationOutput = 1;
+                    while (loopCount < evaluatedNumberN)
+                    {
+                        loopCount++;
+                        multiplationOutput = loopCount * multiplationOutput;
+                    }
+
+                    Console.WriteLine("Output: {0}", multiplationOutput);
+
+
                 }
+                else
+                {
 
-                Console.WriteLine("Output: {0}", multiplationOutput);
+                    Console.WriteLine("Määrittelemätön");
+                }
+                    
 
-                // Age discounts
-
-
+                
                 // Wait for user input
                 Console.ReadKey();
                 }
