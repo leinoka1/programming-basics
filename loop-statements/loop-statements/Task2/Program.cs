@@ -23,12 +23,12 @@ namespace Task2
                 if (evaluatedNumberN > 1)
                 {
                     int loopCount = 0;
-                    long sumOutput = 0;
+                    int sumOutput = 0;
                     while (loopCount < evaluatedNumberN)
                     {
                         loopCount++;
                         sumOutput = loopCount + sumOutput;
-                    }
+                                           }
 
                     Console.WriteLine("Output: {0}", sumOutput);
 
@@ -45,7 +45,7 @@ namespace Task2
                 // Wait for user input
                 Console.ReadKey();
             }
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
