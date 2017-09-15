@@ -6,8 +6,7 @@ namespace Task6
     {
         static void Main(string[] args)
         {
-            // Prompt user
-            // Read user first input
+       
             // Square root 1 to 10
             Console.WriteLine("Number Square root");
             int loopCount = 0;
