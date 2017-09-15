@@ -25,7 +25,6 @@ namespace Task9
             if (evaluatedNumberN > 1)
             {
                 int loopCount = 0;
-                int sumOutput = 0;
                 int headsN = 0;
                 int tailsN = 0;
                 while (loopCount < evaluatedNumberN)
