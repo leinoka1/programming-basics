@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Task2
 {
@@ -9,7 +10,7 @@ namespace Task2
             string userInput;
             Console.Write("Enter a string: ");
             userInput = Console.ReadLine();
-            Console.WriteLine("You entered {0}", userInput.Replace ("e","@"));
+            Console.WriteLine("You entered {0}", userInput.Replace("e","@"));
             Console.ReadKey();
         }
     }
